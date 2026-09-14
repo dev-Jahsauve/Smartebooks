@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Après mise en ligne, remplacez par votre vrai domaine
-Sitemap: https://dev-jahsauve.github.io/Smartebooks/sitemap.xml
+Sitemap: https://smartebooks.netlify.app/sitemap.xml
