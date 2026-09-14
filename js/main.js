@@ -9,7 +9,6 @@
   document.documentElement.classList.add('js');
 
   var WA_NUMBER = '237698308780';
-  var WA_BASE_TEXT = 'Bonjour SmartEbooks ! Je souhaite en savoir plus sur vos services et discuter de mon projet.';
 
   function waUrl(text) {
     return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
@@ -75,31 +74,54 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
-  /* --- Formulaire de contact → WhatsApp avec confirmation --- */
+  /* --- Formulaire de contact → Formspree (envoi email) avec repli WhatsApp --- */
   var form = document.getElementById('contactForm');
   var success = document.getElementById('formSuccess');
-  var fallback = document.getElementById('fallbackLink');
+  var FORMSPREE_ENDPOINT = 'https://formspree.io/f/xdeorygr';
+  var MAILTO = 'smartebooksbusiness@gmail.com';
+
+  function setStatus(state) {
+    if (!success) return;
+    var shown = state !== 'idle';
+    success.classList.toggle('show', shown);
+    success.classList.toggle('error', state === 'error');
+
+    if (state === 'pending') {
+      success.textContent = 'Envoi de votre demande en cours…';
+    } else if (state === 'success') {
+      success.innerHTML =
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>' +
+        'Merci ! Votre message a bien été envoyé. Nous vous répondrons sous 24 h.';
+    } else if (state === 'error') {
+      success.innerHTML =
+        'L&rsquo;envoi a échoué pour le moment. ' +
+        '<a href="' + waUrl('Bonjour SmartEbooks ! Je vous contacte depuis le site, car le formulaire a rencontré un problème.') + '" target="_blank" rel="noopener">Contactez-nous sur WhatsApp</a>' +
+        ' ou par <a href="mailto:' + MAILTO + '">email</a>.';
+    }
+  }
 
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var f = new FormData(form);
-      var lines = [
-        'Nom : ' + f.get('nom'),
-        'Email : ' + f.get('email')
-      ];
-      if (f.get('tel')) lines.push('Téléphone : ' + f.get('tel'));
-      lines.push('Service : ' + f.get('service'));
-      lines.push('Projet : ' + f.get('message'));
 
-      var text = 'Bonjour SmartEbooks ! Voici ma demande :%0A%0A' +
-        lines.map(function (line) { return line; }).join('%0A');
-      var target = 'https://wa.me/' + WA_NUMBER + '?text=' + text;
+      var data = new FormData(form);
+      data.append('_subject', 'Nouvelle demande depuis le site SmartEbooks');
 
-      window.open(target, '_blank', 'noopener');
+      setStatus('pending');
 
-      if (fallback) fallback.setAttribute('href', target);
-      if (success) success.classList.add('show');
+      fetch(form.action || FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('Formspree request failed');
+          form.reset();
+          setStatus('success');
+        })
+        .catch(function () {
+          setStatus('error');
+        });
     });
   }
 })();

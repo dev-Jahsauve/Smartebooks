@@ -438,7 +438,7 @@
     </div>
 
     <div class="box reveal">
-      <form id="contactForm">
+      <form id="contactForm" action="https://formspree.io/f/xdeorygr" method="POST">
         <div class="field">
           <label for="nom">Nom complet</label>
           <input id="nom" name="nom" type="text" placeholder="Votre nom" required autocomplete="name" />
@@ -453,6 +453,7 @@
         </div>
         <div class="field">
           <label for="service">Service souhaité</label>
+          <input type="text" name="_gotcha" hidden tabindex="-1" autocomplete="off" />
           <select id="service" name="service">
             <option>Site vitrine / landing page</option>
             <option>Application / plateforme web</option>
@@ -475,10 +476,7 @@
         </div>
         <button class="btn btn-primary form-cta" type="submit">Envoyer ma demande →</button>
 
-        <p class="form-success" id="formSuccess" role="status">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Votre demande est prête. WhatsApp s'est ouvert (ou <a href="#" id="fallbackLink">cliquez ici</a> si ce n'est pas le cas) — il ne reste qu'à appuyer sur « Envoyer ».
-        </p>
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>

@@ -402,6 +402,9 @@ textarea{min-height:130px;resize:vertical}
 .form-success a{color:var(--green);font-weight:700;text-decoration:underline}
 .form-success.show{display:block}
 .form-success svg{width:16px;height:16px;vertical-align:-3px;margin-right:6px;color:var(--green)}
+.form-success.error{border-color:rgba(255,150,130,.45);background:rgba(255,120,110,.08);color:#FFD8D0}
+.form-success.error a{color:#FF8A7A}
+.form-success.error svg{color:#FF8A7A}
 
 /* ---------- Footer ---------- */
 footer{padding:52px 0 30px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;background:linear-gradient(180deg,transparent,rgba(8,14,20,.6))}
