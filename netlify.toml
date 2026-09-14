@@ -1,0 +1,32 @@
+# ------------------------------------------------------------
+# Configuration Netlify — SmartEbooks
+# Le site est statique (racine du dépôt). Le .htaccess ne
+# fonctionne pas sur Netlify : cache et sécurité définis ici.
+# ------------------------------------------------------------
+
+[build]
+  publish = "."
+
+# Cache navigateur pour les ressources
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# En-têtes de sécurité sur tout le site
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
