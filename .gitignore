@@ -1,0 +1,13 @@
+# Fichiers système / OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Config locale et secrets
+.env
+.env.*
