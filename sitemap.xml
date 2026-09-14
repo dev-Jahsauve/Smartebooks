@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Après mise en ligne, remplacez www.votre-domaine.fr par votre vrai domaine -->
+<!-- Si vous ajoutez un nom de domaine personnalisé, remplacez l'url de base ci-dessous -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.votre-domaine.fr/</loc>
+    <loc>https://dev-jahsauve.github.io/Smartebooks/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.votre-domaine.fr/pages/mentions-legales.html</loc>
+    <loc>https://dev-jahsauve.github.io/Smartebooks/pages/mentions-legales.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.votre-domaine.fr/pages/politique-de-confidentialite.html</loc>
+    <loc>https://dev-jahsauve.github.io/Smartebooks/pages/politique-de-confidentialite.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
