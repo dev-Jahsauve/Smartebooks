@@ -1,0 +1,42 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Ordinateur rÃ©parÃ© par un technicien avec bulle d'aide">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#00F5A0"/>
+    </linearGradient>
+    <radialGradient id="rg" cx=".42" cy=".4" r=".62">
+      <stop offset="0" stop-color="rgba(0,168,255,.13)"/><stop offset="1" stop-color="rgba(0,168,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" rx="18" fill="#0d1a23"/>
+  <rect width="400" height="240" rx="18" fill="url(#rg)"/>
+  <g stroke="#1f3b4a" stroke-width="1"><path d="M0 70h400"/><path d="M0 160h400"/></g>
+
+  <g stroke="#1f3b4a" stroke-width="2.2" stroke-linejoin="round" fill="rgba(5,10,15,.7)">
+    <rect x="70" y="56" width="186" height="116" rx="10"/>
+  </g>
+  <g fill="none" stroke="url(#lg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M86 72h92v66H86z"/>
+    <circle cx="132" cy="100" r="17"/>
+    <path d="M132 95v-7"/>
+    <path d="M122 100h7"/>
+    <path d="M132 105v6"/>
+    <path d="M142 100h-7"/>
+  </g>
+  <path d="M70 148h186" stroke="#00A8FF" stroke-width="2"/>
+  <path d="M110 172h14v16h-14z" fill="rgba(5,10,15,.7)" stroke="#1f3b4a" stroke-width="2"/>
+  <path d="M132 172h14v16h-14z" fill="rgba(5,10,15,.7)" stroke="#1f3b4a" stroke-width="2"/>
+  <path d="M108 196h42l6 12h-54z" fill="rgba(5,10,15,.7)" stroke="#1f3b4a" stroke-width="2"/>
+
+  <g fill="none" stroke="#E8C364" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 106h42l-14 16 14 6-8 14-20-10-12 16-8-12 10-12-12-10z" fill="rgba(232,195,100,.16)"/>
+  </g>
+  <path d="M300 98l10 10-8 8-10-10z" fill="rgba(232,195,100,.3)"/>
+
+  <g fill="none" stroke="#00F5A0" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M250 86h24v10l-10 10h-40l-6-8 22-4 10-8z" fill="rgba(0,245,160,.22)"/>
+  </g>
+
+  <circle cx="86" cy="82" r="3" fill="#00A8FF"/>
+  <circle cx="256" cy="150" r="3" fill="#1f3b4a"/>
+  <circle cx="330" cy="196" r="3.4" stroke="#1f3b4a" stroke-width="1.8" fill="none"/>
+</svg>

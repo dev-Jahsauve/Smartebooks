@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Politique de confidentialité — SmartEbooks</title>
-  <meta name="description" content="Politique de confidentialité du site SmartEbooks : données collectées via le formulaire de contact et leur utilisation." />
+  <meta name="description" content="Politique de confidentialité de SmartEbooks : quelles données sont collectées via le formulaire de contact, pourquoi, et vos droits." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#050A0F" />
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32.png" />
@@ -14,23 +14,38 @@
 
 <header id="header">
   <div class="container nav">
-    <a class="brand" href="../index.html">
+    <a class="brand" href="../index.html" aria-label="SmartEbooks — retour à l'accueil">
       <img src="../assets/smartebooks-logo.jpg" alt="Logo SmartEbooks" width="44" height="44" />
       <span class="brand-text">SmartEbooks<small>Le digital intelligent</small></span>
     </a>
-    <a class="btn btn-ghost" href="../index.html">← Retour au site</a>
+
+    <nav class="navlinks" id="navlinks" aria-label="Navigation principale">
+      <a href="../index.html#accueil">Accueil</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#realisations">Réalisations</a>
+      <a href="../index.html#apropos">À propos</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-primary" href="../index.html#contact">Démarrer mon projet</a>
+
+    <button class="menu-btn" id="menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navlinks">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </header>
 
 <main class="page">
   <div class="container">
-    <header class="page-header">
+    <header class="page-header reveal">
       <span class="eyebrow">Vos données</span>
       <h1>Politique de confidentialité</h1>
-      <p><span class="updated">Dernière mise à jour : septembre 2026</span></p>
+      <p>En clair : ce que nous collectons, pourquoi, et ce que vous pouvez demander.</p>
+      <span class="updated">Dernière mise à jour : septembre 2026</span>
     </header>
 
-    <div class="legal">
+    <div class="legal reveal">
       <section>
         <h2>1. Données collectées</h2>
         <p>Le formulaire de contact du site collecte uniquement les informations que vous saisissez librement :</p>
@@ -40,6 +55,7 @@
           <li>Numéro de téléphone (optionnel)</li>
           <li>Service souhaité et description de votre projet</li>
         </ul>
+        <p>Le site ne dépose aucun cookie publicitaire et ne collecte aucune donnée de navigation.</p>
       </section>
 
       <section>
@@ -54,7 +70,7 @@
 
       <section>
         <h2>3. Partage des données</h2>
-        <p>SmartEbooks ne revend, ne loue et ne transmet vos données à aucun tiers à des fins commerciales. Vos informations peuvent transiter par des services de messagerie que nous utilisons quotidiennement (ex. Gmail, WhatsApp) pour vous répondre.</p>
+        <p>SmartEbooks ne revend, ne loue et ne transmet vos données à aucun tiers à des fins commerciales. Vos informations transitent par les services de messagerie que nous utilisons au quotidien (Gmail, WhatsApp, Formspree pour l'envoi du formulaire) uniquement pour vous répondre.</p>
       </section>
 
       <section>
@@ -64,18 +80,49 @@
 
       <section>
         <h2>5. Vos droits</h2>
-        <p>Vous pouvez à tout moment demander la consultation, la correction ou la suppression des données vous concernant, en nous écrivant à <a href="mailto:smartebooksbusiness@gmail.com">smartebooksbusiness@gmail.com</a>.</p>
+        <p>Vous pouvez à tout moment demander la consultation, la correction ou la suppression des données vous concernant, en nous écrivant à <a href="mailto:smartebooksbusiness@gmail.com">smartebooksbusiness@gmail.com</a>. Nous traitons chaque demande rapidement.</p>
       </section>
     </div>
   </div>
 </main>
 
 <footer>
-  <div class="container footer-bottom footer-simple">
-    <p>© 2026 SmartEbooks. Tous droits réservés.</p>
-    <a href="../index.html">Retour à l'accueil</a>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html">
+          <img src="../assets/smartebooks-logo.jpg" alt="Logo SmartEbooks" width="44" height="44" />
+          <span class="brand-text">SmartEbooks<small>Le digital intelligent</small></span>
+        </a>
+        <p>Sites web, applications, logos, vidéo, photo et formation, à Douala et à distance.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#realisations">Réalisations</a></li>
+          <li><a href="../index.html#apropos">À propos</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:smartebooksbusiness@gmail.com">smartebooksbusiness@gmail.com</a></li>
+          <li><a href="tel:+237698308780">+237 698 30 87 80</a></li>
+          <li><a href="https://wa.me/237698308780?text=Bonjour%20SmartEbooks%20%F0%9F%91%8B" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> SmartEbooks. Tous droits réservés.</p>
+      <div class="social-mini">
+        <a href="mentions-legales.html">Mentions légales</a>
+      </div>
+    </div>
   </div>
 </footer>
 
+<script src="../js/main.js" defer></script>
 </body>
 </html>

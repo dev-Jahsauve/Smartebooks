@@ -6,7 +6,7 @@
 
   <!-- ===== SEO ===== -->
   <title>SmartEbooks — Sites web, IA & services digitaux à Douala | Contactez SmartEbooks, c'est rechercher la qualité</title>
-  <meta name="description" content="SmartEbooks à Douala : sites vitrines, applications web, intelligence artificielle, logos, flyers, montage vidéo avec IA, shooting photo, formation et assistance informatique. Le digital intelligent au service de votre croissance." />
+  <meta name="description" content="SmartEbooks à Douala : sites vitrines, applications web, intelligence artificielle, logos, flyers, montage vidéo, shooting photo, formation et assistance informatique. Contactez SmartEbooks, c'est rechercher la qualité." />
   <meta name="author" content="SmartEbooks" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#050A0F" />
@@ -45,7 +45,7 @@
     "@type": "ProfessionalService",
     "name": "SmartEbooks",
     "slogan": "Contactez SmartEbooks, c'est rechercher la qualité.",
-    "description": "Solutions digitales : sites web, applications web, intelligence artificielle, marketing digital, logos, flyers, montage vidéo avec IA, shooting photo, formation et assistance informatique.",
+    "description": "Solutions digitales : sites web, applications web, intelligence artificielle, marketing digital, logos, flyers, montage vidéo, shooting photo, formation et assistance informatique.",
     "url": "https://smartebooks.netlify.app/",
     "telephone": "+237698308780",
     "email": "smartebooksbusiness@gmail.com",
@@ -102,9 +102,9 @@
 <section class="hero" id="accueil">
   <div class="container hero-grid">
     <div class="hero-copy reveal">
-      <span class="eyebrow">Des idées qui se transforment en solutions.</span>
-      <h1>Le digital intelligent au service de <span class="gradient">votre croissance.</span></h1>
-      <p>SmartEbooks conçoit des sites web, des applications et des supports de communication modernes — avec l'intelligence artificielle comme alliée — pour valoriser votre activité à Douala et partout ailleurs.</p>
+      <span class="eyebrow">Basé à Douala, Cameroun.</span>
+      <h1>Votre activité mérite <span class="gradient">un vrai site web.</span></h1>
+      <p>Sites web, applications, logos, vidéos, photos, formations : nous aidons les entrepreneurs et les PME à se vendre en ligne. Chaque projet est suivi de bout en bout, jusqu'à ce que tout fonctionne.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#contact">Démarrer mon projet</a>
         <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/237698308780?text=Bonjour%20SmartEbooks%20%F0%9F%91%8B%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services.">
@@ -117,12 +117,15 @@
       </div>
     </div>
 
-    <div class="ai-visual reveal" role="img" aria-label="Illustration abstraite : un cœur IA connecté à des données, l'automatisation et le design">
-      <div class="nodes" aria-hidden="true"><i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i></div>
-      <div class="data d1" aria-hidden="true">Données</div>
-      <div class="data d2" aria-hidden="true">Automatisation</div>
-      <div class="data d3" aria-hidden="true">Design</div>
-      <div class="core" aria-hidden="true"><span>AI</span></div>
+    <div class="ai-visual reveal" role="group" aria-label="Vidéo de présentation SmartEbooks : le digital intelligent au service de votre croissance">
+      <video class="ai-visual__video" id="heroVideo" autoplay muted loop playsinline preload="metadata">
+        <source src="assets/videos/publiciter.mp4" type="video/mp4" />
+      </video>
+      <div class="ai-visual__shade" aria-hidden="true"></div>
+      <button class="ai-visual__sound" id="videoSound" type="button" aria-pressed="false" aria-label="Activer le son">
+        <svg class="vol-off" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        <svg class="vol-on" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      </button>
     </div>
   </div>
 </section>
@@ -156,83 +159,127 @@
 <section class="section" id="services">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Nos expertises</span>
-      <h2>Des solutions digitales pensées pour <span class="gradient">votre croissance.</span></h2>
-      <p>De l'identité visuelle aux applications sur mesure, en passant par l'IA, la vidéo et la photo : SmartEbooks couvre toute votre communication digitale.</p>
+      <span class="eyebrow">Nos services</span>
+      <h2>Des services concrets pour <span class="gradient">faire avancer votre activité.</span></h2>
+      <p>Vous ne savez pas exactement ce qu'il vous faut ? Racontez-nous simplement votre situation, on vous orientera. Voici l'essentiel de notre savoir-faire.</p>
     </div>
 
-    <div class="service-grid">
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 4.8L18.7 9l-4.8 1.9L12 16l-1.9-5.1L5.3 9l4.8-1.2L12 3z"/><path d="M19 14l.9 2.3 2.3.9-2.3.9-.9 2.3-.9-2.3-2.3-.9 2.3-.9.9-2.3z"/></svg></div>
-        <h3>Intelligence artificielle</h3>
-        <p>Assistants, workflows et solutions intelligentes pour gagner en productivité.</p>
-      </article>
+    <div class="service-carousel reveal" role="region" aria-roledescription="carrousel" aria-label="Nos services">
+      <div class="service-track" id="servicesTrack">
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">01</span><img src="assets/img/illustrations/ia.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 4.8L18.7 9l-4.8 1.9L12 16l-1.9-5.1L5.3 9l4.8-1.2L12 3z"/><path d="M19 14l.9 2.3 2.3.9-2.3.9-.9 2.3-.9-2.3-2.3-.9 2.3-.9.9-2.3z"/></svg></div>
+            <h3>Intelligence artificielle</h3>
+            <p>Des assistants et des automatisations pour éviter les tâches répétitives et gagner des heures chaque semaine.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-        <h3>Sites vitrines & landing pages</h3>
-        <p>Sites web modernes, rapides, responsives et orientés conversion.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">02</span><img src="assets/img/illustrations/site-vitrine.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+            <h3>Sites vitrines & landing pages</h3>
+            <p>Un site soigné, rapide sur mobile et bien positionné sur Google, qui présente votre activité comme il se doit.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-        <h3>Applications & plateformes web</h3>
-        <p>Plateformes métier sur mesure (PHP, MySQL) : gestion, e-commerce, e-learning.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">03</span><img src="assets/img/illustrations/applications.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+            <h3>Applications & plateformes web</h3>
+            <p>Des outils métier faits pour votre façon de travailler : gestion des stocks, factures, suivi des clients. Développement avec PHP et MySQL.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-        <h3>Marketing digital & SEO</h3>
-        <p>Stratégie de contenu, visibilité en ligne et actions orientées croissance.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">04</span><img src="assets/img/illustrations/marketing.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <h3>Marketing digital & SEO</h3>
+            <p>On vous place là où vos clients vous cherchent : référencement, contenus et campagnes qui donnent des résultats mesurables.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
-        <h3>Logos & identité visuelle</h3>
-        <p>Logos et chartes graphiques cohérentes qui renforcent votre image de marque.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">05</span><img src="assets/img/illustrations/logo.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <h3>Logos & identité visuelle</h3>
+            <p>Un logo et une charte qui reflètent votre activité et restent cohérents sur tous vos supports.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
-        <h3>Flyers & supports visuels</h3>
-        <p>Affiches, flyers et supports de communication pour promouvoir votre activité.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">06</span><img src="assets/img/illustrations/flyers.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+            <h3>Flyers & supports visuels</h3>
+            <p>Des affiches et des flyers bien conçus pour vos promotions, vos ventes et vos événements.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
-        <h3>Montage vidéo avec IA</h3>
-        <p>Vidéos créatives et professionnelles, montées avec des outils modernes et l'IA.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">07</span><img src="assets/img/illustrations/video.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+            <h3>Montage vidéo</h3>
+            <p>Montage et habillage de vos vidéos avec CapCut, Canva ou InShot : musique, sous-titres, effetés. Prêt pour vos réseaux et vos pubs.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
-        <h3>Shooting photo</h3>
-        <p>Séances photo pour vos produits, votre équipe ou vos événements.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">08</span><img src="assets/img/illustrations/photo.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            <h3>Shooting photo</h3>
+            <p>Création et retouche de vos photos avec les outils actuels (Canva, modèles pensés pour vous…) : vous recevez votre cadre photo finalisé.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
-        <h3>Ebooks & produits digitaux</h3>
-        <p>Guides pratiques et ressources numériques pour apprendre, créer, vendre.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">09</span><img src="assets/img/illustrations/ebooks.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+            <h3>Ebooks & produits digitaux</h3>
+            <p>Des guides et des ebooks prêts à diffuser, que vous vouliez enseigner, promouvoir ou vendre.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Formation & accompagnement</h3>
-        <p>Apprenez et maîtrisez les outils numériques à votre rythme, avec un vrai suivi.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">10</span><img src="assets/img/illustrations/formation.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Formation & accompagnement</h3>
+            <p>Des cours pratiques et un suivi personnalisé pour vous rendre autonome sur vos outils.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-        <h3>Assistance informatique</h3>
-        <p>Installation, maintenance, dépannage et optimisation de vos outils informatiques.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">11</span><img src="assets/img/illustrations/assistance.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <h3>Assistance informatique</h3>
+            <p>Installation, dépannage et maintenance de vos postes de travail et de vos outils.</p>
+          </div>
+        </article>
 
-      <article class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-        <h3>Automatisation & productivité</h3>
-        <p>Automatisation des tâches répétitives pour travailler plus vite et mieux.</p>
-      </article>
+        <article class="slide">
+          <div class="slide__media" aria-hidden="true"><span class="slide__num">12</span><img src="assets/img/illustrations/automatisation.svg" alt="" width="400" height="240" loading="lazy" /></div>
+          <div class="slide__body">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+            <h3>Automatisation & productivité</h3>
+            <p>Fini les saisies et les allers-retours répétés : les tâches courantes tournent toutes seules.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="service-controls">
+        <button class="car-btn car-btn--prev" id="servicesPrev" aria-label="Service précédent">←</button>
+        <div class="service-dots" id="servicesDots" role="tablist" aria-label="Choisir un service"></div>
+        <button class="car-btn car-btn--next" id="servicesNext" aria-label="Service suivant">→</button>
+      </div>
     </div>
   </div>
 </section>
@@ -251,12 +298,28 @@
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Nos réalisations</span>
-      <h2>Des projets concrets, <span class="gradient">livrés avec soin.</span></h2>
-      <p>Une sélection de sites web et de supports digitaux récents. L'ensemble de nos travaux — sites, flyers, logos, vidéos — se découvre sur le portfolio.</p>
+      <h2>Quelques projets, <span class="gradient">livrés avec soin.</span></h2>
+      <p>Un aperçu de nos récents travaux. Nos autres créations — sites, flyers, logos, vidéos — sont visibles sur le portfolio.</p>
     </div>
 
     <div class="project-grid">
-      <!-- PROJET 1 : Site vitrine Global Edittion -->
+      <!-- PROJET 1 : AfriToolsAI (SaaS / IA · Démo) -->
+      <article class="project reveal">
+        <div class="project__media">
+          <img src="assets/img/portfolio/AFRITOOLS.jpg" alt="Aperçu de la plateforme AfriToolsAI de création de contenus avec IA" loading="lazy" width="900" height="506" />
+          <span class="project__tag">Web app · IA / SaaS · Démo</span>
+        </div>
+        <div class="project__body">
+          <h3>AfriToolsAI</h3>
+          <p>Boîte à outils IA pour entrepreneurs et freelances africains : génération de contenus pros pour les réseaux sociaux, fiches produits et messages marketing.</p>
+          <div class="project__foot">
+            <span class="project__status live">En ligne</span>
+            <a class="project__link" href="https://afritools.netlify.app/" target="_blank" rel="noopener">Voir le projet →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJET 2 : Site vitrine Global Edittion -->
       <article class="project reveal">
         <div class="project__media">
           <img src="assets/img/portfolio/GLOBAL.jpg" alt="Aperçu du site vitrine Global Edittion Sarl" loading="lazy" width="900" height="429" />
@@ -272,7 +335,7 @@
         </div>
       </article>
 
-      <!-- PROJET 2 : GesNotes -->
+      <!-- PROJET 3 : GesNotes -->
       <article class="project reveal">
         <div class="project__media">
           <img src="assets/img/portfolio/GESNOTES.jpg" alt="Aperçu de l'application GesNotes de gestion des notes" loading="lazy" width="900" height="426" />
@@ -288,7 +351,7 @@
         </div>
       </article>
 
-      <!-- PROJET 3 : CV professionnel -->
+      <!-- PROJET 4 : CV professionnel -->
       <article class="project reveal">
         <div class="project__media">
           <img src="assets/img/portfolio/cv.jpg" alt="Aperçu d'un CV professionnel numérique" loading="lazy" width="900" height="414" />
@@ -300,22 +363,6 @@
           <div class="project__foot">
             <span class="project__status live">En ligne</span>
             <a class="project__link" href="https://jahsauve.netlify.app/" target="_blank" rel="noopener">Voir le projet →</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJET 4 : Portfolio développeur -->
-      <article class="project reveal">
-        <div class="project__media">
-          <img src="assets/img/portfolio/portfolio.jpg" alt="Aperçu du portfolio personnel du fondateur" loading="lazy" width="900" height="447" />
-          <span class="project__tag">Site web · Portfolio</span>
-        </div>
-        <div class="project__body">
-          <h3>Portfolio développeur</h3>
-          <p>Portfolio personnel : vitrine des compétences, de l'expérience et des réalisations du fondateur.</p>
-          <div class="project__foot">
-            <span class="project__status live">En ligne</span>
-            <a class="project__link" href="https://mon-portfolio-opal-phi.vercel.app" target="_blank" rel="noopener">Voir le projet →</a>
           </div>
         </div>
       </article>
@@ -332,13 +379,13 @@
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Notre méthode</span>
-      <h2>Un accompagnement clair, <span class="gradient">de l'idée à la livraison.</span></h2>
+      <h2>Quatre étapes simples, <span class="gradient">sans surprise.</span></h2>
     </div>
     <div class="steps">
-      <div class="step reveal"><span class="step__num">01</span><h3>Discutons</h3><p>Écoute de votre besoin et cadrage de vos objectifs, sans jargon.</p></div>
-      <div class="step reveal"><span class="step__num">02</span><h3>Proposons</h3><p>Définition du périmètre, du planning et de l'investissement adapté.</p></div>
-      <div class="step reveal"><span class="step__num">03</span><h3>Réalisons</h3><p>Conception, développement et points d'étape réguliers.</p></div>
-      <div class="step reveal"><span class="step__num">04</span><h3>Accompagnons</h3><p>Livraison, formation et support après le projet.</p></div>
+      <div class="step reveal"><span class="step__num">01</span><h3>Discutons</h3><p>Vous nous expliquez votre situation, même si le projet n'est pas encore clair pour vous.</p></div>
+      <div class="step reveal"><span class="step__num">02</span><h3>Proposons</h3><p>On vous remet un plan simple : le travail prévu, le délai et le tarif.</p></div>
+      <div class="step reveal"><span class="step__num">03</span><h3>Réalisons</h3><p>On crée, avec des points réguliers pour valider chaque étape ensemble.</p></div>
+      <div class="step reveal"><span class="step__num">04</span><h3>Accompagnons</h3><p>Livré, formé, suivi : on reste joignable après la mise en ligne.</p></div>
     </div>
   </div>
 </section>
@@ -350,7 +397,7 @@
       <div class="promise-panel">
         <span class="eyebrow">Le mot d'ordre</span>
         <h3>Contactez SmartEbooks, c'est <span class="gradient">rechercher la qualité.</span></h3>
-        <p>Chaque projet commence par la compréhension de votre objectif, puis se construit autour d'une solution claire, accessible et évolutive.</p>
+        <p>On commence toujours par vous écouter, puis on construit une solution claire, simple à utiliser et qui peut évoluer avec votre activité.</p>
         <div class="promise-sep" role="presentation"></div>
         <div class="chips-gold" aria-label="Valeurs SmartEbooks">
           <span>Créativité</span><span>Innovation</span><span>Professionnalisme</span><span>Résultats</span>
@@ -371,12 +418,12 @@
         <span class="eyebrow">Pourquoi SmartEbooks</span>
         <h2>La technologie doit rester <span class="gradient">utile.</span></h2>
       </div>
-      <p>Nous combinons technologie, créativité et stratégie pour transformer des besoins concrets en solutions digitales simples, modernes et performantes : sites web, applications, identité visuelle, vidéo, photo et accompagnement.</p>
+      <p>Chez SmartEbooks, la technologie doit servir à quelque chose de précis : votre activité. On reste à l'écoute, on conçoit, on développe, puis on vous forme à l'usage — sans jargon ni mauvaise surprise.</p>
       <div class="points">
-        <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Conseil & stratégie</div>
-        <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Design moderne</div>
-        <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Mobile-first</div>
-        <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Solutions évolutives</div>
+        <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Un interlocuteur unique</div>
+        <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Prix annoncés, sans surprise</div>
+        <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Travail livré rapidement</div>
+        <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Suivi après la livraison</div>
       </div>
       <div class="founder">
         <img src="assets/img/founder.jpg" alt="Jahsauve Yimele, fondateur de SmartEbooks" width="62" height="62" loading="lazy" />
@@ -398,12 +445,12 @@
       <h2>Les réponses aux questions <span class="gradient">essentielles.</span></h2>
     </div>
     <div class="faq reveal">
-      <details><summary>Quels types de services proposez-vous ?</summary><p>SmartEbooks intervient notamment sur les sites web, les applications, l'intelligence artificielle, le marketing digital, les logos et flyers, le montage vidéo avec IA, le shooting photo, les ebooks, la formation et l'assistance informatique.</p></details>
-      <details><summary>Travaillez-vous avec les particuliers comme avec les entreprises ?</summary><p>Oui. Les solutions sont adaptées aux particuliers, créateurs, entrepreneurs, startups et entreprises, en fonction de leurs objectifs et de leur budget.</p></details>
-      <details><summary>Créez-vous des applications web, pas seulement des vitrines ?</summary><p>Absolument : plateformes de gestion, e-commerce, e-learning, santé ou éducation — des applications sur mesure développées avec PHP et MySQL.</p></details>
-      <details><summary>Comment se déroule un projet et en combien de temps ?</summary><p>Vous décrivez votre besoin, nous vous proposons un périmètre clair, puis nous réalisons avec des points d'étape réguliers. Un site vitrine se livre en quelques jours ; une application sur mesure en quelques semaines.</p></details>
-      <details><summary>Y a-t-il un suivi après la livraison ?</summary><p>Oui : formation à la prise en main, maintenance, mises à jour et évolution du projet selon vos besoins.</p></details>
-      <details><summary>Puis-je commander depuis l'étranger ?</summary><p>Bien sûr. SmartEbooks travaille à distance et répond en français ou en anglais, où que vous soyez.</p></details>
+      <details><summary>Quels services proposez-vous ?</summary><p>On touche à pratiquement tout le digital : sites web, applications, intelligence artificielle, logos et flyers, montage vidéo, retouche photo, ebooks, formation et assistance informatique. Si votre besoin ne figure pas dans la liste, demandez-nous.</p></details>
+      <details><summary>Travaillez-vous aussi avec les particuliers ?</summary><p>Oui. Particuliers, commerçants, startups ou entreprises : on adapte le service au projet et au budget.</p></details>
+      <details><summary>Vous ne faites pas que des sites vitrines ?</summary><p>Non. On développe aussi de vraies plateformes métier — gestion, e-commerce, e-learning — en PHP et MySQL, quand un simple site ne suffit pas.</p></details>
+      <details><summary>Comment se déroule un projet, et en combien de temps ?</summary><p>Vous décrivez votre besoin, on confirme le périmètre et le délai, puis on avance par étapes validées ensemble. Un site vitrine se livre en quelques jours, une application en quelques semaines.</p></details>
+      <details><summary>Y a-t-il un suivi après la livraison ?</summary><p>Oui, et c'est important pour nous : formation à la prise en main, petites corrections, maintenance et évolutions quand vous en avez besoin.</p></details>
+      <details><summary>Puis-je commander depuis l'étranger ?</summary><p>Bien sûr. Nous travaillons à distance, en français comme en anglais, avec des clients un peu partout dans le monde.</p></details>
     </div>
   </div>
 </section>
@@ -413,8 +460,8 @@
   <div class="container contact-grid">
     <div class="box reveal">
       <span class="eyebrow">Parlons de votre projet</span>
-      <h3>Transformons votre idée en <span class="gradient">solution digitale.</span></h3>
-      <p>Expliquez-nous votre besoin : site, logo, flyer, vidéo, application ou simple conseil. Pour une réponse rapide, passez par WhatsApp ou par email.</p>
+      <h3>Racontez-nous ce dont <span class="gradient">vous avez besoin.</span></h3>
+      <p>Site, logo, flyer, vidéo, application ou simple question : écrivez-nous en quelques lignes, on vous répond rapidement. WhatsApp et email fonctionnent très bien.</p>
 
       <div class="info-list">
         <div class="info-item">
@@ -460,7 +507,7 @@
             <option>Intelligence artificielle</option>
             <option>Logo & identité visuelle</option>
             <option>Flyers & supports visuels</option>
-            <option>Montage vidéo avec IA</option>
+            <option>Montage vidéo</option>
             <option>Shooting photo</option>
             <option>Marketing digital & SEO</option>
             <option>Ebooks & produits digitaux</option>
@@ -493,7 +540,7 @@
           <img src="assets/smartebooks-logo.jpg" alt="Logo SmartEbooks" width="44" height="44" loading="lazy" />
           <span class="brand-text">SmartEbooks<small>Le digital intelligent</small></span>
         </a>
-        <p>Le digital intelligent au service de votre croissance. Sites web, applications, IA, design, vidéo, photo et formation à Douala.</p>
+        <p>Sites web, applications, logos, vidéo, photo et formation, à Douala et à distance.</p>
         <div class="social social-footer" aria-label="Réseaux sociaux">
           <a href="https://github.com/dev-Jahsauve" target="_blank" rel="noopener" aria-label="GitHub">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>

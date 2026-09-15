@@ -24,6 +24,28 @@
     onScroll();
   }
 
+  /* --- Son de la vidéo héro (volume à fond, bascule on/off) --- */
+  var heroVideo = document.getElementById('heroVideo');
+  var soundBtn = document.getElementById('videoSound');
+  if (heroVideo && soundBtn) {
+    heroVideo.volume = 1;
+
+    var toggleSound = function () {
+      heroVideo.muted = !heroVideo.muted;
+      if (!heroVideo.muted) {
+        heroVideo.volume = 1;
+        var p = heroVideo.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+      var on = !heroVideo.muted;
+      soundBtn.classList.toggle('on', on);
+      soundBtn.setAttribute('aria-pressed', String(on));
+      soundBtn.setAttribute('aria-label', on ? 'Couper le son' : 'Activer le son');
+    };
+
+    soundBtn.addEventListener('click', toggleSound);
+  }
+
   /* --- Menu mobile --- */
   var menuBtn = document.getElementById('menu');
   var nav = document.getElementById('navlinks');
@@ -73,6 +95,80 @@
   /* --- Année du copyright --- */
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+
+  /* --- Carrousel services (auto-play, flèches, pastilles, swipe) --- */
+  var track = document.getElementById('servicesTrack');
+  var dotsWrap = document.getElementById('servicesDots');
+  if (track) {
+    var slides = Array.prototype.slice.call(track.children);
+    var index = 0;
+    var timer = null;
+    var AUTO_MS = 5000;
+
+    slides.forEach(function (s) {
+      var img = s.querySelector('img');
+      if (img) img.loading = 'eager'; // svg de diapositives : toujours chargés
+    });
+
+    function buildDots() {
+      if (!dotsWrap) return;
+      slides.forEach(function (s, i) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Aller au service ' + (i + 1));
+        b.addEventListener('click', function () { goTo(i); restart(); });
+        dotsWrap.appendChild(b);
+      });
+    }
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      if (track) track.style.transform = 'translateX(-' + index * 100 + '%)';
+      if (dotsWrap) {
+        Array.prototype.forEach.call(dotsWrap.children, function (d, j) {
+          d.classList.toggle('active', j === index);
+          d.setAttribute('aria-current', j === index ? 'true' : 'false');
+        });
+      }
+    }
+
+    function next() { goTo(index + 1); }
+    function prev() { goTo(index - 1); }
+
+    function start() {
+      if (!timer) timer = setInterval(next, AUTO_MS);
+    }
+    function stop() {
+      if (timer) { clearInterval(timer); timer = null; }
+    }
+    function restart() { stop(); start(); }
+
+    var prevBtn = document.getElementById('servicesPrev');
+    var nextBtn = document.getElementById('servicesNext');
+    if (prevBtn) prevBtn.addEventListener('click', function () { prev(); restart(); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { next(); restart(); });
+
+    var car = track.closest('.service-carousel');
+    if (car) {
+      car.addEventListener('mouseenter', stop);
+      car.addEventListener('mouseleave', start);
+      car.addEventListener('focusin', stop);
+      car.addEventListener('focusout', function () { if (!car.contains(document.activeElement)) start(); });
+
+      var startX = null;
+      car.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+      car.addEventListener('touchend', function (e) {
+        if (startX === null) return;
+        var dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 45) { dx < 0 ? next() : prev(); restart(); }
+        startX = null;
+      }, { passive: true });
+    }
+
+    buildDots();
+    goTo(0);
+    start();
+  }
 
   /* --- Formulaire de contact → Formspree (envoi email) avec repli WhatsApp --- */
   var form = document.getElementById('contactForm');

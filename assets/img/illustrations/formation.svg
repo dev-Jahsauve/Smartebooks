@@ -1,0 +1,50 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Formateur devant un tableau avec un Ã©lÃ¨ve">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#00F5A0"/>
+    </linearGradient>
+    <radialGradient id="rg" cx=".5" cy=".36" r=".62">
+      <stop offset="0" stop-color="rgba(0,245,160,.11)"/><stop offset="1" stop-color="rgba(0,245,160,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" rx="18" fill="#0d1a23"/>
+  <rect width="400" height="240" rx="18" fill="url(#rg)"/>
+  <g stroke="#1f3b4a" stroke-width="1"><path d="M0 96h400"/></g>
+
+  <g stroke="url(#lg)" stroke-width="2.4" stroke-linejoin="round" fill="rgba(5,10,15,.72)">
+    <rect x="86" y="70" width="192" height="100" rx="10"/>
+  </g>
+  <g fill="none" stroke="#00A8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M108 92l18-14 12 10 16-20"/>
+    <path d="M104 112h30"/>
+    <path d="M104 122h22"/>
+    <path d="M104 132h28"/>
+  </g>
+  <g fill="none" stroke="#E8C364" stroke-width="2.4" stroke-linecap="round">
+    <path d="M146 92l30 16 16 10"/>
+  </g>
+  <g fill="none" stroke="#00F5A0" stroke-width="2.2">
+    <path d="M238 84l10 10 18-20"/>
+  </g>
+
+  <g stroke="#00A8FF" stroke-width="2" stroke-linejoin="round" fill="rgba(5,10,15,.7)">
+    <path d="M96 170l14 34h18l8-34z"/>
+    <path d="M112 172h20" stroke="#00A8FF"/>
+  </g>
+  <circle cx="118" cy="158" r="8" fill="#00F5A0"/>
+  <g fill="none" stroke="#8FE8FF" stroke-width="1.8" stroke-linecap="round">
+    <path d="M100 170h20M104 176h12"/>
+  </g>
+
+  <g stroke="url(#lg)" stroke-width="2.2" stroke-linejoin="round" fill="rgba(5,10,15,.7)">
+    <rect x="278" y="84" width="54" height="58" rx="10"/>
+  </g>
+  <g fill="none" stroke="#00A8FF" stroke-width="2" stroke-linecap="round">
+    <path d="M288 122l16-16 8 8 10-14"/>
+    <path d="M290 100h26"/>
+  </g>
+
+  <path d="M118 192v8" stroke="#1f3b4a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M305 170c0-12 6-18 14-18 10 0 16 8 14 18z" fill="rgba(0,168,255,.25)"/>
+  <path d="M333 152h14l2 12-18 8-8-6z" fill="rgba(0,245,160,.25)"/>
+</svg>

@@ -1,0 +1,51 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Liste de tÃ¢ches cochÃ©es et engrenages de l'automatisation">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#00F5A0"/>
+    </linearGradient>
+    <radialGradient id="rg" cx=".5" cy=".4" r=".62">
+      <stop offset="0" stop-color="rgba(0,245,160,.11)"/><stop offset="1" stop-color="rgba(0,245,160,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" rx="18" fill="#0d1a23"/>
+  <rect width="400" height="240" rx="18" fill="url(#rg)"/>
+  <g stroke="#1f3b4a" stroke-width="1"><path d="M0 64h400"/><path d="M0 176h400"/><path d="M200 0v240"/></g>
+
+  <g stroke="url(#lg)" stroke-width="2.4" stroke-linejoin="round" fill="rgba(5,10,15,.7)">
+    <rect x="90" y="64" width="154" height="150" rx="12"/>
+    <rect x="90" y="64" width="154" height="26" rx="12" fill="rgba(0,168,255,.22)"/>
+  </g>
+  <g fill="none" stroke="#00F5A0" stroke-width="2.6" stroke-linecap="round">
+    <circle cx="118" cy="77" r="5"/>
+    <path d="M115 77l2 2 4-4"/>
+  </g>
+  <g fill="none" stroke="#00A8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M108 110l7 7 12-12"/>
+    <path d="M134 110h64"/>
+    <path d="M108 136l7 7 12-12"/>
+    <path d="M134 136h52"/>
+    <path d="M108 162l7 7 12-12"/>
+    <path d="M134 162h46"/>
+  </g>
+  <g fill="none" stroke="#2c4c5e" stroke-width="2" stroke-linecap="round">
+    <path d="M108 184l7 7-7 7"/>
+    <path d="M122 184l7 7-7 7"/>
+    <path d="M136 184l7 7-7 7"/>
+  </g>
+
+  <g stroke="url(#lg)" stroke-width="2.4" stroke-linejoin="round" fill="rgba(5,10,15,.7)">
+    <circle cx="276" cy="112" r="34"/>
+    <circle cx="276" cy="112" r="12"/>
+    <path d="M276 62v12M276 150v12M312 112h-12M252 112h-12"/>
+  </g>
+  <path d="M276 84l14 6 4 10" stroke="#00F5A0" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+
+  <g stroke="#1f3b4a" stroke-width="2.2" stroke-linejoin="round" fill="rgba(5,10,15,.6)">
+    <circle cx="330" cy="176" r="20"/>
+    <circle cx="330" cy="176" r="7"/>
+    <path d="M330 148v8M330 196v8M350 176h-8M310 176h8"/>
+  </g>
+
+  <path d="M330 170l6 6 4-4" stroke="#00F5A0" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <circle cx="356" cy="62" r="3.2" fill="#E8C364"/>
+</svg>

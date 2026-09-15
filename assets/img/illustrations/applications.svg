@@ -1,0 +1,59 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="TÃ©lÃ©phone et tablette affichant une application de gestion">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#00F5A0"/>
+    </linearGradient>
+    <radialGradient id="rg" cx=".38" cy=".4" r=".62">
+      <stop offset="0" stop-color="rgba(0,168,255,.14)"/><stop offset="1" stop-color="rgba(0,168,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" rx="18" fill="#0d1a23"/>
+  <rect width="400" height="240" rx="18" fill="url(#rg)"/>
+  <g stroke="#1f3b4a" stroke-width="1"><path d="M0 120h400"/></g>
+
+  <g stroke="#00A8FF" stroke-width="2.2" stroke-linejoin="round" fill="rgba(5,10,15,.7)">
+    <rect x="88" y="52" width="96" height="158" rx="16"/>
+    <path d="M118 52h36" stroke="#00A8FF"/>
+  </g>
+  <g fill="none" stroke="#00A8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="100" y="64" width="72" height="18" rx="6"/>
+    <path d="M108 73h24"/>
+    <path d="M100 96l18-14 12 8 14-18 14 10"/>
+  </g>
+  <g fill="none" stroke="#2c4c5e" stroke-width="2" stroke-linecap="round">
+    <path d="M100 118h50"/>
+    <path d="M100 130h40"/>
+    <path d="M100 142h52"/>
+    <path d="M100 154h34"/>
+  </g>
+  <g fill="none" stroke="#00F5A0" stroke-width="2" stroke-linecap="round">
+    <circle cx="158" cy="196" r="4" fill="#00F5A0"/>
+    <path d="M154 196l3 3 6-6"/>
+  </g>
+
+  <g stroke="url(#lg)" stroke-width="2.2" stroke-linejoin="round" fill="rgba(5,10,15,.7)">
+    <rect x="208" y="60" width="116" height="140" rx="12"/>
+  </g>
+  <g fill="none" stroke="#00F5A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 72l8-8 8 8-8 8z" fill="#00F5A0"/>
+  </g>
+  <g fill="none" stroke="#00A8FF" stroke-width="2" stroke-linecap="round">
+    <path d="M222 96h88"/>
+    <path d="M222 110h64" opacity=".55"/>
+  </g>
+  <g fill="none" stroke="url(#lg)" stroke-width="2" stroke-linecap="round">
+    <rect x="222" y="128" width="42" height="42" rx="8"/>
+    <rect x="272" y="128" width="42" height="42" rx="8"/>
+    <path d="M236 138l8 8 8-8"/>
+    <path d="M284 138l8 8 8-8"/>
+  </g>
+  <g fill="none" stroke="#1f3b4a" stroke-width="2" stroke-linecap="round">
+    <path d="M222 170h88"/>
+    <path d="M222 182h40"/>
+  </g>
+
+  <g fill="none" stroke="#E8C364" stroke-width="1.7" stroke-linecap="round">
+    <path d="M138 140c-6 0-8-4-8-8 0-3 2-6 6-6 2 0 4 1 5 3 1-4 4-6 7-5 3 1 4 4 3 7 4 1 5 4 3 7l-16 9z" fill="rgba(232,195,100,.22)"/>
+  </g>
+  <circle cx="312" cy="184" r="3" fill="#1f3b4a"/>
+</svg>

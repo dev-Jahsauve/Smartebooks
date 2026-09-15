@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Ordinateur affichant un site internet moderne">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#00F5A0"/>
+    </linearGradient>
+    <radialGradient id="rg" cx=".55" cy=".4" r=".6">
+      <stop offset="0" stop-color="rgba(0,245,160,.12)"/><stop offset="1" stop-color="rgba(0,245,160,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" rx="18" fill="#0d1a23"/>
+  <rect width="400" height="240" rx="18" fill="url(#rg)"/>
+  <g stroke="#1f3b4a" stroke-width="1"><path d="M0 72h400"/><path d="M0 168h400"/></g>
+
+  <g fill="none" stroke="#00A8FF" stroke-width="2" stroke-linejoin="round">
+    <rect x="74" y="58" width="228" height="134" rx="12" fill="rgba(5,10,15,.78)"/>
+    <rect x="74" y="58" width="228" height="26" rx="12" fill="none"/>
+    <path d="M86 71h14a3 3 0 0 1 0-6h14a3 3 0 0 1 0 6M86 71h6M118 71h-6"/>
+    <rect x="126" y="64" width="120" height="11" rx="5.5" stroke="#2c4c5e" />
+  </g>
+
+  <g stroke="#1f3b4a" stroke-width="2" stroke-linejoin="round" fill="rgba(5,10,15,.6)">
+    <rect x="74" y="192" width="228" height="13" rx="6"/>
+  </g>
+
+  <g fill="none" stroke="#00F5A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="108" y="96" width="56" height="34" rx="8"/>
+    <path d="M126 100v6"/>
+    <path d="M132 100v6"/>
+    <path d="M126 110v6"/>
+    <path d="M132 110v6"/>
+  </g>
+
+  <g fill="none" stroke="#8FE8FF" stroke-width="2" stroke-linecap="round">
+    <path d="M180 104h78"/>
+    <path d="M180 116h58" opacity=".55"/>
+    <path d="M180 128h70" opacity=".3"/>
+  </g>
+
+  <g fill="none" stroke="#00F5A0" stroke-width="2" stroke-linecap="round">
+    <rect x="108" y="146" width="92" height="26" rx="13"/>
+  </g>
+  <g stroke="#00A8FF" stroke-width="1.6" fill="none"><path d="M150 158l-8-8"/><circle cx="158" cy="150" r="8.5"/></g>
+  <circle cx="158" cy="150" r="2.4" fill="#00A8FF"/>
+
+  <g fill="none" stroke="#E8C364" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="244" y="140" width="40" height="26" rx="6"/>
+    <path d="M258 140v26"/>
+  </g>
+
+  <circle cx="330" cy="130" r="10" fill="rgba(0,168,255,.25)"/>
+  <path d="M326 130a4 4 0 1 0 8 0z" fill="#00A8FF"/>
+</svg>

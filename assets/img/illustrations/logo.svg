@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Palette de peintre, pinceau et logo réalisé">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#00F5A0"/>
+    </linearGradient>
+    <radialGradient id="rg" cx=".4" cy=".38" r=".6">
+      <stop offset="0" stop-color="rgba(232,195,100,.12)"/><stop offset="1" stop-color="rgba(232,195,100,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" rx="18" fill="#0d1a23"/>
+  <rect width="400" height="240" rx="18" fill="url(#rg)"/>
+  <g stroke="#1f3b4a" stroke-width="1"><path d="M0 120h400"/><path d="M200 0v240"/></g>
+
+  <g fill="none" stroke="url(#lg)" stroke-width="2.4" stroke-linejoin="round">
+    <path d="M96 92a64 64 0 0 1 0-8l8-40 14 26 12-30 14 36 16-22 12 40 10-18 12 8-24 62-74-12z" fill="rgba(5,10,15,.72)"/>
+  </g>
+  <circle cx="106" cy="78" r="7" fill="#00A8FF"/>
+  <circle cx="148" cy="58" r="7" fill="#00F5A0"/>
+  <circle cx="192" cy="78" r="7" fill="#E8C364"/>
+  <circle cx="164" cy="112" r="7" fill="#00A8FF" opacity=".7"/>
+
+  <g fill="none" stroke="#E8C364" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M254 96h24l-6 38-28 42-16-8 26-36z" fill="rgba(232,195,100,.14)"/>
+    <path d="M236 168l-14 26-16-8 18-24z" fill="rgba(232,195,100,.14)"/>
+  </g>
+
+  <g fill="none" stroke="#00F5A0" stroke-width="2.4" stroke-linecap="round">
+    <path d="M260 138l20-20 14 14-24 22-10-16z" fill="rgba(0,245,160,.14)"/>
+    <path d="M276 122l10 8 8-8"/>
+  </g>
+
+  <g fill="none" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="96" y="168" width="46" height="34" rx="9" fill="rgba(5,10,15,.7)"/>
+    <path d="M108 180l13 10 13-10"/>
+    <path d="M108 194h26"/>
+  </g>
+  <g fill="none" stroke="#8FE8FF" stroke-width="1.8" stroke-linecap="round">
+    <path d="M286 178h40"/>
+    <path d="M294 188h24"/>
+  </g>
+  <circle cx="150" cy="150" r="3" fill="#1f3b4a"/>
+</svg>
