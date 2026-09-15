@@ -7,13 +7,6 @@
 [build]
   publish = "."
 
-# Cache navigateur pour la vidéo du héros (jamais mise en cache,
-# pour qu'une nouvelle version soit visible immédiatement)
-[[headers]]
-  for = "/assets/videos/publiciter.mp4"
-  [headers.values]
-    Cache-Control = "no-cache, must-revalidate"
-
 # Cache navigateur pour les ressources
 [[headers]]
   for = "/assets/*"
@@ -29,6 +22,13 @@
   for = "/js/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# Vidéo du héros : jamais mise en cache (placée après /assets/* pour
+# que l'en-tête no-cache prenne le dessus)
+[[headers]]
+  for = "/assets/videos/publiciter.mp4"
+  [headers.values]
+    Cache-Control = "no-cache"
 
 # En-têtes de sécurité sur tout le site
 [[headers]]
