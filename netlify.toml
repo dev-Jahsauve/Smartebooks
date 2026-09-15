@@ -7,12 +7,14 @@
 [build]
   publish = "."
 
-# Cache navigateur pour les ressources
+# Cache navigateur pour la vidéo du héros (jamais mise en cache,
+# pour qu'une nouvelle version soit visible immédiatement)
 [[headers]]
-  for = "/assets/videos/*"
+  for = "/assets/videos/publiciter.mp4"
   [headers.values]
-    Cache-Control = "no-cache"
+    Cache-Control = "no-cache, must-revalidate"
 
+# Cache navigateur pour les ressources
 [[headers]]
   for = "/assets/*"
   [headers.values]
